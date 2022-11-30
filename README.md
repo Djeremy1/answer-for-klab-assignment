@@ -1,2 +1,2 @@
 # answer-for-klab-assignment
-the answers is for question number2(Subquestion 2,3&amp;4)
+the answers is for question number1 and number2(Subquestion 2,3&amp;4)
