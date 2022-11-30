@@ -1,33 +1,29 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<HTML>
+    <script>
+		console.log("TechUpskills test")
+	</script>
+    <title>klab asignment</title>
+ <head>
+     <link rel="stylesheet" href="style.css">
+</head>
 <body>
+    <div class="form">
+        <h1>Create your account</h1>
+        <h2>it is free and easy</h2>
+        <input type="name" name="name" placeholder="Enter your name">
+        <input type="email" name="email" placeholder="Type your e-mail or phone number">
+        <input type="password" name="password" placeholder="Type your Password Here">
+        <button class="btnn"><a href="#">Register</a></button>
 
-<p id="demo"></p>
-<p id="sum"></p>
-<p id="sumabove10"></p>
-
-
-<script>
-const item = [ {name: 'Bike', price:100}, {name: 'TV', price:200}, {name: 'Album', price:10}, {name: 'Book', price:5}, {name: 'Phone', price:500}, {name: 'Computer', price:1000}];
-let max = 0;
-let sumabove10 = 0, sum = 0;
-for(let i=0;i<item.length;i++) {
-   if(parseInt(item[i].price,5) > max) {
-      max = item[i].price;
-   }
-   
-   sum += item[i].price;
-   
-   if(item[i].price > 10){
-    sumabove10 += item[i].price;
-   }
-}
-
-document.getElementById("demo").innerHTML = "expensive product is: " + max;
-document.getElementById("sum").innerHTML = "sum of all product price is: " + sum;
-document.getElementById("sumabove10").innerHTML = "sum of price above 10$ is: " + sumabove10;
-
-</script>
-
+        <p class="link">Don't have an account<br><a href="#">Sign up</a> here</a></p>
+        <p class="liw">Log in with</p>
+        <div class="icon" >
+            <a href="#"><ion-icon name= "logo-facebook"></ion-icon></a>
+            <a href="#"><ion-icon name= "logo-whatsapp"></ion-icon></a>
+            <a href="#"><ion-icon name= "logo-twitter"></ion-icon></a>
+            <a href="#"><ion-icon name= "logo-instagram"></ion-icon></a>
+        </div>
+    </div>
 </body>
 </html>
