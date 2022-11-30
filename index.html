@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+<p id="sum"></p>
+<p id="sumabove10"></p>
+
+
+<script>
+const item = [ {name: 'Bike', price:100}, {name: 'TV', price:200}, {name: 'Album', price:10}, {name: 'Book', price:5}, {name: 'Phone', price:500}, {name: 'Computer', price:1000}];
+let max = 0;
+let sumabove10 = 0, sum = 0;
+for(let i=0;i<item.length;i++) {
+   if(parseInt(item[i].price,5) > max) {
+      max = item[i].price;
+   }
+   
+   sum += item[i].price;
+   
+   if(item[i].price > 10){
+    sumabove10 += item[i].price;
+   }
+}
+
+document.getElementById("demo").innerHTML = "expensive product is: " + max;
+document.getElementById("sum").innerHTML = "sum of all product price is: " + sum;
+document.getElementById("sumabove10").innerHTML = "sum of price above 10$ is: " + sumabove10;
+
+</script>
+
+</body>
+</html>
